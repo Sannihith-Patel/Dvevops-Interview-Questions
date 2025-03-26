@@ -1,0 +1,88 @@
+This is an interview question that was asked during a real interview I attended.
+Terraform
+What is the difference between resource and data in Terraform, and how are they used?
+What are the most commonly used 10 Terraform commands and their use cases?
+What are the data types in Terraform?
+What is a function in Terraform?
+What are Terraform modules, and how do they function in an environment?
+What is the Terraform lifecycle, and how does it work?
+If the Terraform state file is deleted but existing resources need to be managed without recreation, how can we achieve this?
+If the Terraform state file is deleted, can we recreate or modify existing resources? If so, how?
+How can multiple EC2 instances be created in Terraform without using the count parameter?
+What are local and variable definitions in Terraform?
+If a child module is used for VPC and EC2 instances in Terraform, how can we deploy the EC2 instance in the VPC’s subnet?
+What is the difference between a resource block and a data block in Terraform?
+CI/CD (Jenkins, GitHub, Deployment)
+What is a CI/CD pipeline, and how does it work?
+How can we define a multibranching strategy in Jenkins?
+How can we trigger a Jenkins pipeline, and what are the different triggering methods?
+What best practices should be followed when integrating GitHub with Jenkins?
+What is a hosted stage in Jenkins?
+In a Jenkinsfile, if a user wants to change the credentials every time, how can we assign them without hardcoding?
+If the code passes in a Jenkins pipeline and gets deployed but later encounters issues in production during testing, how can we resolve the issue?
+What challenges have you faced in DevOps operations, and how did you resolve them?
+What new frameworks would you suggest to the development team for deployment or code building?
+How can we check the code health status in GitHub only?
+EKS/Kubernetes
+What is a Kubernetes Probe?
+What is the difference between a Kubernetes Deployment and a DaemonSet?
+How can deployments be managed in Kubernetes?
+How do you update the version in EKS, and how will it affect the nodes and pods?
+If an application is deployed in Kubernetes and needs to connect to an RDS instance, how can it establish a connection from Pods/Nodes?
+How can AWS Lambda logs be stored in an EKS cluster?
+How can we upgrade an EKS cluster without affecting application deployments?
+If a UI-based application is deployed in Kubernetes and accessible via a URL, how can we deploy it in Kubernetes, and how will the backend API respond?
+AWS Services (EC2, RDS, Lambda, S3, IAM, Networking, Security, Cost Optimization, CloudFormation)
+EC2
+If an EC2 instance is in a private subnet and needs to send data to an S3 bucket, how can it connect to the S3 bucket?
+If a resource is in a private subnet and cannot be accessed, how can it be accessed?
+If a PEM key is lost or deleted, how can we connect to an EC2 instance?
+RDS & Databases
+How is authentication provided to database end users, and how do they access it?
+How can a large number of users in IAM be handled?
+How can a database server be set up for disaster recovery (DR), and what strategies are commonly used?
+How do you choose the right database based on requirements?
+How can database backup data be stored in AWS?
+How can data transfer costs be reduced if AWS Cost Gateway Hub has led to increased expenses?
+How can database costs be optimized for unused data that may be needed in the future, and how can the database be resized to save costs?
+If a database needs to be upgraded to the latest version without data loss, how can this be achieved?
+How can we optimize and improve the performance of an RDS database?
+How does DynamoDB work, how is its cost allocated, and how can we reduce DynamoDB costs?
+If an application is deployed in Kubernetes and needs to connect to an RDS instance, how can it establish a connection from Pods/Nodes?
+If an RDS database is hosted in a private subnet in AWS and users from an on-premises network need access, how can they connect?
+Lambda
+What is AWS Lambda invocation, and how does it work?
+When should you use AWS Lambda instead of an EC2 instance, and vice versa?
+How can a Lambda function be triggered?
+S3 & CloudFront
+What are the best practices for deploying to Amazon S3?
+In CloudFront, S3 is the endpoint. What other endpoints can be used?
+IAM & Multi-Account Management
+A customer requires a Jenkins server deployed in one AWS account, but the same server’s pipelines need to connect to another account in the same region. How can we establish this connection securely?
+If I have a user who needs to access all accounts, how can they use AWS SSO (Single Sign-On)?
+I have multiple accounts, and I want to monitor the resources for each user. How can I achieve this?
+How can I create a cost optimization budget, set up a dashboard, and monitor costs in AWS? Additionally, how do I set up an AWS Organization and manage IAM within the organization?
+Networking (VPC, Load Balancing, API Exposure)
+If my web-based application is hosted on a private subnet, how can I access it from outside the subnet?
+Can VPC peering be done between accounts? In how many ways can we establish a connection between two networks?
+If an NLB has a static IP address and an ALB has a dynamic IP address, can we assign a static IP address to the ALB?
+How can an API be exposed to the internet?
+CloudFormation
+If a CloudFormation stack fails and rolls back after one hour, how can we troubleshoot and resolve the issue?
+Cost Optimization & Monitoring
+How can data be secured in AWS services?
+How can I reduce the size of a logical disk on a Linux machine when it is sometimes unused, to save costs?
+DevOps & Security
+How can a 404 error in an application be resolved at the application level?
+If a UI-based application is deployed in Kubernetes and accessible via a URL, how can we deploy it in Kubernetes, and how will the backend API respond?
+How can application vulnerabilities be checked in AWS, and which tools can be used for this?
+If a web application is hosted, how can we secure it, and what security measures can we apply without using third-party tools?
+Docker
+What is a Docker multi-stage build, and how does it work?
+What is the difference between the ADD and COPY commands in a Dockerfile, and how do the CMD and ENV commands differ?
+Architecture & Design
+How can I design a 3-tier architecture in AWS Cloud? What is the process?
+How do you design a solution for an AWS microservices application or migrate an application to AWS?
+Can you provide a brief overview of microservices architecture?
+What is an AWS Landing Zone, and how is it configured in AWS?
+What is Databricks, and how does its environment work?

@@ -1,0 +1,29 @@
+Interview questions for the Company MultiTv Tech solutions :
+
+What is Docker?
+
+How to create a Dockerfile?
+
+How to create a Docker container?
+
+How to check logs in Docker?
+
+What is ulimits in Docker?
+
+What is a Parameter Group in a database?
+
+Which command to dump and import a database?
+
+What is AWS CloudFront?
+
+How to map an S3 bucket to a service?
+
+How to hide EFS storage?
+
+What is an ECS Task Definition?
+
+How to deploy an app using AWS ECS?
+
+What is the DNS port number?
+
+How to copy data from one server to another?

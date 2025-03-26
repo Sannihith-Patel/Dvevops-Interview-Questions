@@ -1,0 +1,27 @@
+List of Questions I Was Asked During the Telephonic Screening Round at Qualcomm
+
+How do you monitor applications, services, logs, and key metrics in an organization?
+
+ What are the different types of AWS services used for various use cases?
+
+ If there are multiple EC2 instances (5-10), and I need to share files across all, which AWS service should I use?
+
+ If I’m using EFS, but it consumes more than data ex: 10 TB, and making costs high, how can I reduce the cost without impacting the data?
+
+ What is Auto Scaling Group (ASG) in AWS?
+
+ If an ASG scales up to 10 instances and scales down to 5, but I want to keep a critical instance running without termination, how can I configure that?
+
+How can I move S3 data older than 30 days to Glacier storage to reduce costs?
+
+ What is Route 53, and how does it work?
+
+ If my Route 53 DNS receives traffic from multiple countries, can I redirect traffic based on the country?
+
+Which text editors are commonly used in Linux for file editing?
+
+How do I find and replace all word (e.g.,"abc" with "xyz") inside a file?
+
+If a log file contains multiple client IPs and status codes, how can I count the occurrences of different status codes?
+
+Write a Linux automation script to extract and count HTTP status codes from a log file every 5 minutes.

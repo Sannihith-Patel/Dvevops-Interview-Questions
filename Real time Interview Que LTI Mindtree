@@ -1,0 +1,100 @@
+L1 Questions (Beginner Level)
+
+1️⃣ In Git, explain the push and pull commands.
+    •    git push uploads local repository content to a remote repository.
+    •    git pull fetches changes from a remote repository and merges them into the local branch.
+
+2️⃣ What is the use of Git tags?
+    •    Git tags mark specific points in the repository’s history, often used for version releases (e.g., v1.0).
+
+3️⃣ What are the different types of branches in Git?
+    •    Main/Master Branch: The production-ready branch.
+    •    Feature Branch: For developing new features.
+    •    Develop Branch: Integration branch for new features before merging into the main branch.
+    •    Release Branch: Prepares stable code for release.
+    •    Hotfix Branch: For urgent fixes in production.
+
+4️⃣ How do you write an Ansible playbook, and what client requirements do you consider?
+    •    A playbook is a YAML file defining tasks to be executed on remote servers.
+    •    Considerations: OS compatibility, dependencies, idempotency, user permissions, and rollback strategies.
+
+name: Install Nginx
+hosts: webservers
+become: yes
+tasks:
+name: Install Nginx
+  apt: 
+    name: nginx
+    state: present
+
+5️⃣ In Python, what are lists and tuples, and how do they differ?
+    •    Lists: Mutable, dynamic, and defined using [].
+    •    Tuples: Immutable, faster, and defined using ().
+
+6️⃣ In CloudWatch, what is the use of log groups and log trails?
+    •    Log Groups: Logical containers for log streams from different services.
+    •    Log Trails: Capture and store API activity for auditing (linked with CloudTrail).
+
+7️⃣ In Terraform, what is the purpose of init, plan, and apply commands?
+    •    terraform init → Initializes the working directory.
+    •    terraform plan → Shows what changes will be made.
+    •    terraform apply → Applies the changes to the infrastructure.
+8️⃣ What happens if the Terraform state file is accidentally deleted?
+    •    If stored locally, it’s lost, and manual intervention is needed.
+    •    If stored remotely (e.g., S3), it can be recovered from the backend.
+
+9️⃣ What is the purpose of creating S3 bucket policies?
+    •    To define access permissions at the bucket level for users, groups, or AWS services.
+
+🔟 How do you maintain the lifecycle of an S3 bucket?
+    •    Implement lifecycle policies for transitions (e.g., move data to Glacier) and expiration (auto-delete old objects).
+
+1️⃣1️⃣ In Airflow, if a job fails, how do you debug it?
+    •    Check logs (airflow logs <dag_id>), review task instance details, retry the job, or test tasks manually.
+
+1️⃣2️⃣ If you’re facing performance issues on a server, how do you troubleshoot?
+    •    Check CPU (top), memory (free -m), disk (df -h), I/O (iostat), and logs (journalctl -xe)
+
+
+L2 Questions (Advanced Level)
+
+1️⃣ What are Network ACLs and Security Groups, and how do they differ?
+    •    Network ACLs: Stateless, applied at the subnet level, allow/deny specific traffic.
+    •    Security Groups: Stateful, applied at the instance level, allow only permitted traffic.
+
+2️⃣ Explain EC2 instances and handling multiple VPCs.
+    •    EC2 instances are virtual servers in AWS. Multiple VPCs can be connected using VPC peering or Transit Gateway.
+
+3️⃣ How do you configure AWS RDS, and what factors do you consider?
+    •    Factors: Instance size, storage type (GP2/IO1), backup retention, multi-AZ, read replicas, and security settings.
+
+4️⃣ How much data is stored in your RDS MySQL?
+    •    Use SELECT table_schema AS DB, SUM(data_length + index_length) / 1024 / 1024 AS SIZE_MB FROM information_schema.tables GROUP BY table_schema;
+
+5️⃣ How many masters and slaves are in RDS?
+    •    RDS uses one primary instance (master) and multiple replicas (read replicas for read scalability).
+6️⃣ How do you configure a Grafana dashboard?
+    •    Add a data source (e.g., Prometheus, CloudWatch), create a panel, define metrics, and set visualization options.
+
+7️⃣ What kind of CI/CD pipelines are you familiar with?
+    •    Jenkins, GitHub Actions, GitLab CI/CD, AWS CodePipeline, ArgoCD.
+
+8️⃣ Explain Declarative vs. Scripting pipelines.
+    •    Declarative Pipelines: Define the pipeline as code using YAML or JSON (e.g., Jenkinsfile).
+    •    Scripting Pipelines: Use scripting (e.g., Bash, Python) to define steps dynamically.
+
+9️⃣ In Kubernetes, if a pod is in a pending state, how do you troubleshoot?
+    •    Check pod status (kubectl get pods), describe pod (kubectl describe pod <pod-name>), check events (kubectl get events).
+
+🔟 If Docker containers are consuming too much disk space, how do you fix it?
+    •    Run docker system prune to clean unused containers, images, and volumes.
+
+1️⃣1️⃣ In Linux, how do you attach and detach a filesystem?
+    •    Attach: mount /dev/sdX /mnt
+    •    Detach: umount /mnt
+
+1️⃣2️⃣ How do you print the last 15 lines of a file in Linux?
+    •    tail -n 15 filename.txt
+
+1️⃣3️⃣ How do you enable passwordless authentication between two servers?
+Use SSH keys:

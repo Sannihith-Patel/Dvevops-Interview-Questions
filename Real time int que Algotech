@@ -1,0 +1,25 @@
+Attended interview with Algotech today morning..
+
+These are the Questions:
+
+What command is used to initialize a Terraform working directory?
+
+In Kubernetes, what command is used to check the status of all pods in a specific namespace?
+
+Which AWS service is primarily used for object storage?
+
+What is the purpose of a Dockerfile?
+
+What is the difference between a Deployment and a StatefulSet in Kubernetes?
+
+Which tool would you use for infrastructure as code (IaC) when managing AWS resources, and what file format does it use?
+
+In Jenkins, which file is commonly used to define CI/CD pipelines as code?
+
+What Kubernetes object is used to expose a service externally using a DNS name?
+
+Which shell command is used to give execution permission to a shell script?
+
+What is the primary purpose of Prometheus in a cloud environment?
+
+An Ubuntu server on AWS has run out of disk space, how would you handle this situation?
